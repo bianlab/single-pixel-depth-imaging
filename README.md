@@ -12,22 +12,23 @@ A pyTorch implementation of SPDI network, with support for training, inference a
 ## Installation
 Download pretrained weights
     
-    The weights of each network are stored in the weights file, where： <br>
-    for CONV1:net_SPI.pt  <br>
-    for CONV2:net_depth.pt <br>
-    for CONV3: net_bg.pt <br>
+    The weights of each network are stored in the weights file, where： 
+    for CONV1:net_SPI.pt  
+    for CONV2:net_depth.pt
+    for CONV3: net_bg.pt 
 
 Download datasets 
     
     Complete datasets: <br>
-    Https://www.baidunetdisc <br>
-    Background image: STL10 datasets <br>
-    https://cs.stanford.edu/~acoates/stl10/ <br>
+    Https://www.baidunetdisc 
+    Background image: STL10 datasets 
+    https://cs.stanford.edu/~acoates/stl10/ 
   
 ## Network structure
-    An end-to-end deep neural network structure is designed, which is shown as follows. For depth reconstruction, it contains the self-encoding network and parallel residual network respectively used for reconstruction of two-dimensional scene and depth information. Specifically, the self-encoding network (CONV1) firstly uses the fully-connected layer to convert the one-dimensional measurement to a two-dimensional image, and then uses a three-dimensional convolution kernel to perform multiple convolution operations to extract deep features. <br>
-    
-    The depth information reconstruction of the three-dimensional image is performed by connecting the parallel residual network (CONV2), and finally a grayscale image representing the height is obtained. The grayscale image is visualized in three dimensions to obtain the three-dimensional information of the object. <br>
+An end-to-end deep neural network structure is designed, which is shown as follows. For depth reconstruction, it contains the self-encoding network and parallel residual network respectively used for reconstruction of two-dimensional scene and depth information. Specifically, the self-encoding network (CONV1) firstly uses the fully-connected layer to convert the one-dimensional measurement to a two-dimensional image, and then uses a three-dimensional convolution kernel to perform multiple convolution operations to extract deep features. <br>
+
+
+The depth information reconstruction of the three-dimensional image is performed by connecting the parallel residual network (CONV2), and finally a grayscale image representing the height is obtained. The grayscale image is visualized in three dimensions to obtain the three-dimensional information of the object. <br>
     
     FIG1
   
