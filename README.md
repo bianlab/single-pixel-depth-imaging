@@ -20,9 +20,9 @@ Download pretrained weights
 Download datasets 
     
     Complete datasets: 
-    Https://www.baidunetdisc 
+        https://www.baidunetdisc 
     Background image: STL10 datasets 
-    https://cs.stanford.edu/~acoates/stl10/ 
+        https://cs.stanford.edu/~acoates/stl10/ 
   
 ## Network structure
 An end-to-end deep neural network structure is designed, which is shown as follows. For depth reconstruction, it contains the self-encoding network and parallel residual network respectively used for reconstruction of two-dimensional scene and depth information. Specifically, the self-encoding network (CONV1) firstly uses the fully-connected layer to convert the one-dimensional measurement to a two-dimensional image, and then uses a three-dimensional convolution kernel to perform multiple convolution operations to extract deep features. <br>
