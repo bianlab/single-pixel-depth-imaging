@@ -3,10 +3,10 @@ A pyTorch implementation of SPDI network, with support for training, inference a
 
 ## Environments
 
-        1.Ubuntu 16.04 x86_64 <br>
-        2.Python 3.6 <br>
-        3.LaptopPC (Intel Core i7-8750H) <br>
-        4.Pytorch 0.4 <br>
+        1.Ubuntu 16.04 x86_64 
+        2.Python 3.6 
+        3.LaptopPC (Intel Core i7-8750H) 
+        4.Pytorch 0.4 
 
 
 ## Installation
@@ -19,7 +19,7 @@ Download pretrained weights
 
 Download datasets 
     
-    Complete datasets: <br>
+    Complete datasets: 
     Https://www.baidunetdisc 
     Background image: STL10 datasets 
     https://cs.stanford.edu/~acoates/stl10/ 
