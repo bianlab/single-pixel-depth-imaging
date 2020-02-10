@@ -43,7 +43,7 @@ For each detailed information of network, see the corresponding file name, eg:CO
 ## Results
 Here are some figures of height and background reconstruction results from testsets.
     
-   ![image](http://github.com/bianlab/single-pixel-depth-imaging/raw/master/images/simulation.jpg)
+   ![image](http://github.com/bianlab/single-pixel-depth-imaging/raw/master/images/simulation.png)
 
 ## Train
 Use 12000 datasets, 10 percent of datasets are used for validation, 10 percent of datasets are used for test. 
