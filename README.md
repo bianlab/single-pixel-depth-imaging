@@ -10,7 +10,7 @@ A pyTorch implementation of SPDI network, with support for training, inference a
 
 
 ## Installation
-Download pretrained weights
+###Download pretrained weights
     
     The weights of each network are stored in the weights file, where： 
     for CONV1: CNN1.pt  
@@ -19,7 +19,7 @@ Download pretrained weights
     
     All the weights can be downloaded as following website.
 
-Download datasets 
+###Download datasets 
     
   Complete datasets:  <br>
   https://pan.baidu.com/s/1M6O54pHen4va2dXEkXwXLA
@@ -36,15 +36,18 @@ An end-to-end deep neural network structure is designed, which is shown as follo
 
 The depth information reconstruction of the three-dimensional image is performed by connecting the parallel residual network (CONV2), and finally a grayscale image representing the height is obtained. The grayscale image is visualized in three dimensions to obtain the three-dimensional information of the object. <br>
     
- ![image](http://github.com/bianlab/single-pixel-depth-imaging/images/network.jpg)
+ ![image](http://github.com/bianlab/single-pixel-depth-imaging/raw/master/images/network.jpg)
   
 ## Test 
 To understand the complete process of SPDI network, run demo.py. 
     
+    $ cd ~ 
     $ python3 demo.py 
+
 This Demo gives the reconstruction of mountain peak, and background intensity is 1. 
 
-For each detailed information of network, see the corresponding file name, eg:CONV1.py.
+        For each detailed information of network, see the corresponding file in network_py_file.
+        each named CONV1.py, CONV2.py and CONV3.py.
 
 ## Results
 Here are some figures of height and background reconstruction results from testsets.
