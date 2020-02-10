@@ -19,10 +19,11 @@ Download pretrained weights
 
 Download datasets 
     
-    Complete datasets: 
-        https://www.baidunetdisc 
-    Background image: STL10 datasets 
-        https://cs.stanford.edu/~acoates/stl10/ 
+  Complete datasets: 
+  https://www.baidunetdisc 
+  
+  Background image: STL10 datasets 
+  https://cs.stanford.edu/~acoates/stl10/ 
   
 ## Network structure
 An end-to-end deep neural network structure is designed, which is shown as follows. For depth reconstruction, it contains the self-encoding network and parallel residual network respectively used for reconstruction of two-dimensional scene and depth information. Specifically, the self-encoding network (CONV1) firstly uses the fully-connected layer to convert the one-dimensional measurement to a two-dimensional image, and then uses a three-dimensional convolution kernel to perform multiple convolution operations to extract deep features. <br>
@@ -30,7 +31,7 @@ An end-to-end deep neural network structure is designed, which is shown as follo
 
 The depth information reconstruction of the three-dimensional image is performed by connecting the parallel residual network (CONV2), and finally a grayscale image representing the height is obtained. The grayscale image is visualized in three dimensions to obtain the three-dimensional information of the object. <br>
     
- ![image](http://github.com/bianlab/single-pixel-depth-imaging/raw/master/images/network.jpg)
+ ![image](http://github.com/bianlab/single-pixel-depth-imaging/images/network.jpg)
   
 ## Test 
 To understand the complete process of SPDI network, run demo.py. 
