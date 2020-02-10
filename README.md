@@ -30,7 +30,7 @@ An end-to-end deep neural network structure is designed, which is shown as follo
 
 The depth information reconstruction of the three-dimensional image is performed by connecting the parallel residual network (CONV2), and finally a grayscale image representing the height is obtained. The grayscale image is visualized in three dimensions to obtain the three-dimensional information of the object. <br>
     
-    ![image](http://github.com/bianlab/single-pixel-depth-imaging/images/network.jpg)
+ ![image](http://github.com/bianlab/single-pixel-depth-imaging/images/network.jpg)
   
 ## Test 
 To understand the complete process of SPDI network, run demo.py. 
@@ -43,11 +43,11 @@ For each detailed information of network, see the corresponding file name, eg:CO
 ## Results
 Here are some figures of height and background reconstruction results from testsets.
     
-    FIG2 
-    
-    FIG3
+   ![image](http://github.com/bianlab/single-pixel-depth-imaging/images/simulation.jpg)
 
 ## Train
+Use 12000 datasets, 10 percent of datasets are used for validation, 10 percent of datasets are used for test. 
+
     $ train.py [-h] [--epochs EPOCHS] [--batch_size BATCH_SIZE]
                 [--gradient_accumulations GRADIENT_ACCUMULATIONS]
                 [--model_def MODEL_DEF] [--data_config DATA_CONFIG]
@@ -59,4 +59,4 @@ Here are some figures of height and background reconstruction results from tests
                 [--multiscale_training MULTISCALE_TRAINING]
 
 ## Create
-The process of create 1-D measurement of SPI measurement, run create.py.
+The process of create 1-D measurement of SPI measurement, run create.py. This code is for forming the 1-D measurement from 2-D pictures and the corresponding 0-1 pattern. 
