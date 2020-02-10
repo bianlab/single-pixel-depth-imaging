@@ -10,7 +10,8 @@ A pyTorch implementation of SPDI network, with support for training, inference a
 
 
 ## Installation
-###Download pretrained weights
+
+### Download pretrained weights
     
     The weights of each network are stored in the weights file, where： 
     for CONV1: CNN1.pt  
@@ -19,7 +20,7 @@ A pyTorch implementation of SPDI network, with support for training, inference a
     
     All the weights can be downloaded as following website.
 
-###Download datasets 
+### Download datasets 
     
   Complete datasets:  <br>
   https://pan.baidu.com/s/1M6O54pHen4va2dXEkXwXLA
