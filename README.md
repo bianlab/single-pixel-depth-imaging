@@ -16,14 +16,18 @@ Download pretrained weights
     for CONV1: CNN1.pt  
     for CONV2: CNN2.pt
     for CONV3: CNN3.pt 
+    
+    All the weights can be downloaded as following website.
 
 Download datasets 
     
-  Complete datasets: 
-  https://www.baidunetdisc   <br>
+  Complete datasets:  <br>
+  https://pan.baidu.com/s/1M6O54pHen4va2dXEkXwXLA
+  
+  code: yhz8
   
   
-  Background image: STL10 datasets:
+  Background image: STL10 datasets:  <br>
   https://cs.stanford.edu/~acoates/stl10/ 
   
 ## Network structure
@@ -45,7 +49,7 @@ For each detailed information of network, see the corresponding file name, eg:CO
 ## Results
 Here are some figures of height and background reconstruction results from testsets.
     
-   ![image](http://github.com/bianlab/single-pixel-depth-imaging/raw/master/images/simulation.png)
+   ![image](http://github.com/bianlab/single-pixel-depth-imaging/images/simulation.png)
 
 ## Train
 Use 12000 datasets, 10 percent of datasets are used for validation, 10 percent of datasets are used for test. 
