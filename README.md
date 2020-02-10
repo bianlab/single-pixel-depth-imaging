@@ -13,16 +13,17 @@ A pyTorch implementation of SPDI network, with support for training, inference a
 Download pretrained weights
     
     The weights of each network are stored in the weights file, where： 
-    for CONV1:net_SPI.pt  
-    for CONV2:net_depth.pt
-    for CONV3: net_bg.pt 
+    for CONV1: CNN1.pt  
+    for CONV2: CNN2.pt
+    for CONV3: CNN3.pt 
 
 Download datasets 
     
   Complete datasets: 
-  https://www.baidunetdisc 
+  https://www.baidunetdisc   <br>
   
-  Background image: STL10 datasets 
+  
+  Background image: STL10 datasets:
   https://cs.stanford.edu/~acoates/stl10/ 
   
 ## Network structure
