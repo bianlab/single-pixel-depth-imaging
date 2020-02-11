@@ -1,5 +1,5 @@
 # single-pixel-depth-imaging
-A pyTorch implementation of the single-pixel depth imaging (SPDI) network, with support for training, inference and evaluation. For more information, please contact Liheng Bian (bian@bit.edu.cn).
+A pyTorch implementation of the single-pixel depth imaging (SPDI) network, with support for training, inference and evaluation. For more information, please contact Liheng Bian (bian at bit dot edu dot cn).
 
 ## 1. Environments
 
