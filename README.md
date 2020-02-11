@@ -37,7 +37,7 @@ An end-to-end deep neural network structure is designed, which is shown as follo
 
 The depth information reconstruction of the three-dimensional image is performed by connecting the parallel residual network (CONV2), and finally a grayscale image representing the height is obtained. The grayscale image is visualized in three dimensions to obtain the three-dimensional information of the object. <br>
     
- ![image](http://github.com/bianlab/single-pixel-depth-imaging/raw/master/images/network.jpg)
+ <div align=center><img width="650" height="350" src="http://github.com/bianlab/single-pixel-depth-imaging/raw/master/images/network.jpg"/></div> 
   
 ## Test 
 To understand the complete process of SPDI network, run demo.py. 
