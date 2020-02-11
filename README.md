@@ -1,5 +1,5 @@
 # single-pixel-depth-imaging
-A pyTorch implementation of SPDI network, with support for training, inference and evaluation.
+A pyTorch implementation of the single-pixel depth imaging (SPDI) network, with support for training, inference and evaluation. For more information, please contact Liheng Bian (bian@bit.edu.cn).
 
 ## 1. Environments
 
@@ -39,7 +39,7 @@ The dataset contains 12000 3D models, including different hemispheres, pyramids 
   
   
 ## 3. Network structure
-An end-to-end convolutional neural network is built to  reconstruct the depth H and reﬂectance O information from the one-dimensional measurement sequence. <br>
+An end-to-end convolutional neural network is built to reconstruct the depth and reﬂectance information from the one-dimensional measurement sequence. <br>
     
  <div align=center><img height="190" width="600" src="http://github.com/bianlab/single-pixel-depth-imaging/raw/master/images/network.png"/></div> 
  
@@ -48,37 +48,19 @@ An end-to-end convolutional neural network is built to  reconstruct the depth H 
  The reﬂectance reconstruction subnet (CONV3) contains a fully connect layer, three 3D convolution layers, and a set of residual blocks.
   
 ## 4. Test 
-To understand the complete process of SPDI network, run demo.py. 
+To simulate the complete process of SPDI network, run demo.py. 
     
     $ cd ~ 
     $ python3 demo.py 
 
-This Demo gives the reconstruction of mountain peak, and background intensity is 1. 
+This Demo gives the reconstruction of the mountain peak. 
 
      For each detailed information of network, see the corresponding file in network_py_file.
      each named CONV1.py, CONV2.py and CONV3.py.
 
 ## 5. Results
-Exemplar reconstructed images and corresponding error maps of different targets, with the sampling ratio as follows.
+Exemplar reconstructed images and corresponding error maps of different targets.
     
  <div align=center><img  height="263" width="600" src="https://github.com/bianlab/single-pixel-depth-imaging/raw/master/images/simulation.png"/></div>
 
-## 6. Train
-  We took 80 % of the dataset for training, 10 % for model validation, and the rest 10 % for testing.  <br>
-  
-  During network training, the learning rate was set 0.0001, and the Batch_size was set 12000. We used the ReLU function for activation, and used the Adam solver for gradient descent optimization. 
-
-    $ train.py [-h] [--epochs EPOCHS] [--batch_size BATCH_SIZE]
-                [--gradient_accumulations GRADIENT_ACCUMULATIONS]
-                [--model_def MODEL_DEF] [--data_config DATA_CONFIG]
-                [--pretrained_weights PRETRAINED_WEIGHTS] [--n_cpu N_CPU]
-                [--img_size IMG_SIZE]
-                [--checkpoint_interval CHECKPOINT_INTERVAL]
-                [--evaluation_interval EVALUATION_INTERVAL]
-                [--compute_map COMPUTE_MAP]
-                [--multiscale_training MULTISCALE_TRAINING]
-
-## 7. Create datasets
-Using the composite modulation, the measurement sequence contains both depth and reﬂectance information of the target. The developed composite modulation contains two components, including the random coding used to encode the 2D spatial information, and the sinusoidal coding applied for depth modulation.
-        
-    The process of create 1-D measurement of SPI measurement, run create.py. 
+<br>
