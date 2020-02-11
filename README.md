@@ -41,7 +41,7 @@ The dataset contains 12000 3D models, including different hemispheres, pyramids 
 ## 3. Network structure
 An end-to-end convolutional neural network is built to  reconstruct the depth H and reﬂectance O information from the one-dimensional measurement sequence. <br>
     
- <div align=center><img height="200" width="800" src="http://github.com/bianlab/single-pixel-depth-imaging/raw/master/images/network.jpg"/></div> 
+ <div align=center><img height="286" width="900" src="http://github.com/bianlab/single-pixel-depth-imaging/raw/master/images/network.jpg"/></div> 
  
  The depth reconstruction subnet consists of two parts, including the selfencoding subnet (CONV1) and the parallel residual subnet (CONV2). The CONV1 contains a fully connected layer and three 3D convolution layers to extract target features. The convolution kernel size is (9×9×1), (1×1×64) and (5×5×32), respectively. The CONV2 consists of two parallel residual subnets, each containing a set of residual blocks and convolution blocks. The structure of the residual block is shown on the bottom. A concatenate layer is ﬁnally employed to connect the two subnets and output the reconstructed depth map. 
  
@@ -61,7 +61,7 @@ This Demo gives the reconstruction of mountain peak, and background intensity is
 ## 5. Results
 Exemplar reconstructed images and corresponding error maps of different targets, with the sampling ratio as follows.
     
- <div align=center><img  height="350" width="700" src="https://github.com/bianlab/single-pixel-depth-imaging/raw/master/images/simulation.png"/></div>
+ <div align=center><img  height="350" width="800" src="https://github.com/bianlab/single-pixel-depth-imaging/raw/master/images/simulation.png"/></div>
 
 ## 6. Train
   We took 80 % of the dataset for training, 10 % for model validation, and the rest 10 % for testing.  <br>
