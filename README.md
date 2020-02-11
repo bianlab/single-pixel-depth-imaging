@@ -53,7 +53,7 @@ This Demo gives the reconstruction of mountain peak, and background intensity is
 ## Results
 Here are some figures of height and background reconstruction results from testsets.
     
-   ![image](http://github.com/bianlab/single-pixel-depth-imaging/images/simulation.png)
+ <div align=center><img width="450" height="250" src="http://github.com/bianlab/single-pixel-depth-imaging/images/simulation.png"/></div>
 
 ## Train
 Use 12000 datasets, 10 percent of datasets are used for validation, 10 percent of datasets are used for test. 
