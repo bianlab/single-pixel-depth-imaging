@@ -34,7 +34,7 @@ class CNN(nn.Module):
 
         super(CNN, self).__init__()
 
-        self.conv1 = nn.Sequential(        # input shape (1, 128, 128)
+        self.conv1 = nn.Sequential(        # input shape (1, 64, 64)
 
             nn.Conv2d(
 
@@ -48,7 +48,7 @@ class CNN(nn.Module):
 
                 padding=1,                  # if want same width and length of this image after Conv2d, padding=(kernel_size-1)/2 if stride=1
 
-            ),                              # output shape (50, 128, 128)
+            ),                              # output shape (50, 64, 4)
 
             nn.ReLU(),                      # activation
             
@@ -170,9 +170,9 @@ class CNN(nn.Module):
 
     ### END ###   (50,128,128)
         
-        self.conv2 = nn.Sequential(         # input shape (50, 128, 128)
+        self.conv2 = nn.Sequential(         # input shape (50, 64, 64)
 
-            nn.Conv2d(50, 1, 3, 1, 1),     # output shape (50, 128, 128)
+            nn.Conv2d(50, 1, 3, 1, 1),     # output shape (50, 64, 64)
 
             nn.ReLU(),                      # activation
 
@@ -210,7 +210,7 @@ class CNN(nn.Module):
         
         output = self.conv2(x)
   
-        #output = self.out(x)   #(1,128,128)
+        #output = self.out(x)   #(1,64,64)
 
         return output    # return x for visualization
 
